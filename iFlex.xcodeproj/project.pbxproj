@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C086A422728DB9100B3E97C /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C086A412728DB9100B3E97C /* Movies.swift */; };
 		D8019CC92720F16A00CA240C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8019CC82720F16A00CA240C /* AppDelegate.swift */; };
 		D8019CCB2720F16A00CA240C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8019CCA2720F16A00CA240C /* SceneDelegate.swift */; };
 		D8019CCD2720F16A00CA240C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8019CCC2720F16A00CA240C /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C086A412728DB9100B3E97C /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		D8019CC52720F16A00CA240C /* iFlex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFlex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8019CC82720F16A00CA240C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8019CCA2720F16A00CA240C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C086A402728DB7900B3E97C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8C086A412728DB9100B3E97C /* Movies.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		D8019CBC2720F16A00CA240C = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		D8019CC72720F16A00CA240C /* iFlex */ = {
 			isa = PBXGroup;
 			children = (
+				8C086A402728DB7900B3E97C /* Data */,
 				D83EDF082727E2AB001D4917 /* Cell */,
 				D8019CDC2720F55F00CA240C /* AppDelegate */,
 				D8019CDD2720F56B00CA240C /* Controller */,
@@ -178,6 +189,7 @@
 			files = (
 				D83EDF0B2727E2CA001D4917 /* CollectionMovie.swift in Sources */,
 				D8019CCD2720F16A00CA240C /* ViewController.swift in Sources */,
+				8C086A422728DB9100B3E97C /* Movies.swift in Sources */,
 				D83EDF0F2727E38F001D4917 /* MovieCollectionViewCell.swift in Sources */,
 				D8019CC92720F16A00CA240C /* AppDelegate.swift in Sources */,
 				D8019CCB2720F16A00CA240C /* SceneDelegate.swift in Sources */,

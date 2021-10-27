@@ -72,11 +72,23 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        movies.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        let movieAlbum = movies[indexPath.row] as! [String:Any]
+        
+        if (movieAlbum["groupe"] as! String) == "Trending Now" {
+            return 300
+        }
+        return 250
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "movieAlbumCell", for: indexPath) as! CollectionMovie
+        cell.selectionStyle = .none
+        cell.config(data: movies[indexPath.row])
         return cell
     }
     
